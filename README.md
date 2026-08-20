@@ -76,7 +76,3 @@ The trail list lives in a Google Sheet with columns: **Name, Miles, Elevation, E
 - The **CheckCalendar** node's canvas subtitle showed "create: event" rather than a read/lookup operation — worth confirming it's actually set to look up existing events (e.g. "Get Many"), not create one.
 - The Anthropic Chat Model rejected requests containing smart/curly punctuation (em dashes "—", curly quotes " " ' ') copy-pasted from other apps — Claude's API requires plain ASCII (Latin-1) characters in request text. Retype rather than paste when editing node text fields.
 - **Simple Memory** needs a valid session ID. It auto-populates when the workflow starts from n8n's native Chat Trigger node; with any other trigger (like a Schedule Trigger), set Session ID to "Define Below" and supply your own expression.
-
-## Activating
-
-Save the workflow, resolve any red-flagged nodes, then toggle **Inactive → Active** in the top right of the editor. The Schedule Trigger node needs to be configured with your desired run time for the workflow to fire automatically.
